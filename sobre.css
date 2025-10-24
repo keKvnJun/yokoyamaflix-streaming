@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0%;
+    top: 0;
+    background-color: #DEF2F9;
+    color: #041E42;
+}
+
+header {
+    background-color: #001B3F;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.titulo {
+    font-weight: bold;
+    color: #13B5EA;
+}
+
+p {
+    text-align: center;
+}
+
+footer{
+    background-color: #222222;
+    justify-content:end;
+    text-align: center;
+    height: 70px;
+    padding:20px 0;
+    width: 100%;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
