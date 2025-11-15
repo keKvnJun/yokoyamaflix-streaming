@@ -1,0 +1,254 @@
+body.main-body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f171e;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.anime-header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+    padding: 24px 48px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-geral {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+}
+
+.logo-texto {
+    font-size: 24px;
+    font-weight: 800;
+    color: #8bd7f2; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.botao-voltar {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.full-anime {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 96px 64px 32px 64px;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-degrade {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0f171e 35%, rgba(15, 23, 30, 0.75) 60%, rgba(15, 23, 30, 0.2) 100%);
+}
+
+.anime-content {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.sinopse-geral {
+    flex: 30%;
+}
+
+.anime-titulo {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.sinopse-texto {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    max-width: 800px;
+}
+
+.sinopse-texto p {
+    margin-bottom: 24px;
+}
+
+.info-anime {
+    flex: 2; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 32px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    height: fit-content;
+}
+
+.info-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.info-titulo {
+    display: block;
+    font-weight: 700;
+    color: #9ca3af;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.info-conteudo {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.info-conteudo-classificacao-L {
+    background-color: #0c9447;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-classificacao-10 {
+    background-color: #0f7dc2;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-classificacao-12 {
+    background-color: #f8c411;
+    color: #000000;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-classificacao-14 {
+    background-color: #e67824;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-classificacao-16 {
+    background-color: #db2827;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-classificacao-18 {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.info-conteudo-genero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.info-conteudo-genero-tags span {
+    font-size: 14px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.info-conteudo-genero-tags span:hover {
+    background-color: rgba(255,255,255,0.2);
+    cursor: default;
+}
+
+.imdb-link {
+    margin-top: 32px;
+}
+
+.imdb-botao {
+    display: inline-block;
+    background-color: #f5c518;
+    color: #000000;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.imdb-botao:hover {
+    background-color: #e2b616;
+}
